@@ -1,4 +1,11 @@
-# amazingkanban-client
+# Amazingkanban
+Simple realtime kanban board using socket.io and vue.js
+
+## Demo
+[https://amazingkanban.patriagani.my.id](https://amazingkanban.patriagani.my.id)
+
+## Server Repository
+[https://github.com/patriagani/amazingkanban-server](https://github.com/patriagani/amazingkanban-server)
 
 ## Project setup
 ```
