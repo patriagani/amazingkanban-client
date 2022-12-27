@@ -72,7 +72,7 @@ import Board from './components/Board';
 import axios from 'axios'
 import io from 'socket.io-client'
 
-const socket = io('http://localhost:3000');
+const socket = io(process.env.VUE_APP_API_URL);
 
 export default {
   name: 'App',
@@ -82,7 +82,7 @@ export default {
   },
 
   data: () => ({
-    url: "http://localhost:3000",
+    url: process.env.VUE_APP_API_URL,
     dialog: false,
     title: "",
     description: "",
