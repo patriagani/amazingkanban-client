@@ -66,12 +66,12 @@
 import axios from 'axios'
 import io from 'socket.io-client'
 
-const socket = io('http://localhost:3000');
+const socket = io(process.env.VUE_APP_API_URL);
 
   export default {
     data: () => ({
       dialog: [],
-      url: "http://localhost:3000"
+      url: process.env.VUE_APP_API_URL
     }),
     methods: {
       changeStatus(id, newStatus) {
